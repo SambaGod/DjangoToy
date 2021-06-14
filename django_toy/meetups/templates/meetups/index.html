@@ -30,11 +30,13 @@
                   <img src="" alt="{{meet.title}}" />
                 </div>
                 <div class="meetup-details">
-                  <h3>{{meetup.title}}</h3>
-                  <address>{{meetup.location}}</address>
+                  <h3>{{meet.title}}</h3>
+                  <address>{{meet.location}}</address>
                 </div>
                 <div class="meetup-actions">
-                  <a href="" class="btn"> More Details</a>
+                  <a href="{% url 'meetup-detail' meet.slug %}" class="btn">
+                    More Details</a
+                  >
                 </div>
               </div>
             </article>
