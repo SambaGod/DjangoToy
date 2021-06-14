@@ -7,3 +7,10 @@ This code was assisted by freecodecamp.org
 
 - Install Django: `python3 -m pip install Django`
 - Create Project: `django-admin startproject django_toy`
+- Create an app/module: `python3 manage.py startapp meetups`
+  All installed apps must be connected to the root project inside settings.py -> installed apps
+- Run development server: `python3 manage.py runserver`
+
+## Name conventions
+
+Name conventions in Django are important for example directories like templates, migrations, static etc. should be named exactly that way
