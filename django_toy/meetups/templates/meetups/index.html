@@ -2,8 +2,9 @@
 {% load static %} {% comment %} Django templating language {% endcomment %}
 {% block site_css %}
 <link rel="stylesheet" href="{% static 'meetups/styles/all-meetups.css' %}" />
-{% endblock %} {% comment %} Block name should be the same as defined in base.html {% endcomment %}
-{% block title %}All Meetups{% endblock %} 
+{% endblock %}
+{% comment %} Block name should be the same as defined in base.html {% endcomment %}
+{% block title %}All Meetups{% endblock %}
 {% block main_heading %} We got great meetups coming up {% endblock %}
 {% block header_content %}
 <p>Find the one that best suits your needs</p>
@@ -14,24 +15,7 @@
     <h2>Upcoming Meetups</h2>
     <ol>
       {% for meet in meetups %}
-      <div class="meetup-item">
-        <article>
-          <div class="meetup-summary">
-            <div class="meetup-image">
-              <img src="" alt="{{meet.title}}" />
-            </div>
-            <div class="meetup-details">
-              <h3>{{meet.title}}</h3>
-              <address>{{meet.location}}</address>
-            </div>
-            <div class="meetup-actions">
-              <a href="{% url 'meetup-detail' meet.slug %}" class="btn">
-                More Details</a
-              >
-            </div>
-          </div>
-        </article>
-      </div>
+      {% include 'meetups/includes/meetup-item.html' with title=meet.title location=meet.location slug=meet.slug %}
       {% endfor %}
     </ol>
   </section>
