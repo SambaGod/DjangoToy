@@ -10,6 +10,9 @@ This code was assisted by freecodecamp.org
 - Create an app/module: `python3 manage.py startapp meetups`
   All installed apps must be connected to the root project inside settings.py -> installed apps
 - Run development server: `python3 manage.py runserver`
+- Turn model into migration: `python3 manage.py makemigrations`
+- Run migrations: `python3 manage.py migrate`
+- Create User: `python3 manage.py createsuperuser`
 
 ## Name conventions
 
