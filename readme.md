@@ -13,6 +13,7 @@ This code was assisted by freecodecamp.org
 - Turn model into migration: `python3 manage.py makemigrations`
 - Run migrations: `python3 manage.py migrate`
 - Create User: `python3 manage.py createsuperuser`
+- Install Pillow for image handling `python3 -m pip install Pillow`
 
 ## Name conventions
 

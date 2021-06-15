@@ -19,7 +19,8 @@ ol {
 
 .meetup-summary {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .meetup-image {
