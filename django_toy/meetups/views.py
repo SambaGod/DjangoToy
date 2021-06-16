@@ -19,8 +19,8 @@ def meetup_details(request, meetup_slug):
         return render(request, 'meetups/meetup_details.html', {
             # 'meetup_title': selected_meetup['title'], # In case of static data
             'meetup_found': True,
-            'meetup_title': selected_meetup.title,
-            'meetup_description': selected_meetup.description,
+            # 'meetup_title': selected_meetup.title,
+            'meetup': selected_meetup,
         })
     except Exception as exc:
         return render(request, 'meetups/meetup_details.html', {
