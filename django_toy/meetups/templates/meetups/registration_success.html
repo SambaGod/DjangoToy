@@ -12,7 +12,7 @@
         Thanks for signing up. See you at the meetup
     </p>
     <p>
-        Got questions or can't make it? please <a href="">contact the organizer</a> ahead of time!
+        Got questions or can't make it? please <a href="mailto:{{ organizer_email }}">contact the organizer</a> ahead of time!
     </p>
  </section>
  <section id="continue">
@@ -20,7 +20,7 @@
         Of course you can sigup for more than one meetup
     </p>
     <p>
-        <a href="/" class="btn">Explore our meetups</a> 
+        <a href="{% url 'all-meetups' %}" class="btn">Explore our meetups</a> 
     </p>
  </section>
  {% endblock body %}
