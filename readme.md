@@ -18,3 +18,5 @@ This code was assisted by freecodecamp.org
 ## Name conventions
 
 Name conventions in Django are important for example directories like templates, migrations, static etc. should be named exactly that way
+
+## Random text
